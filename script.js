@@ -7,9 +7,9 @@ const gameContainer = document.querySelector(".container"),
 // Loop through each option image element
 optionImages.forEach((image, index) => {
   image.addEventListener("click", (e) => {
-    let selected = e.target.querySelector('p').textContent;
-    document.body.style.backgroundImage = `url("images/${selected}_background.jpg")`
-    image.classList.add("active");
+    // let selected = e.target.querySelector('p').textContent;
+    // document.body.style.backgroundImage = `url("images/${selected}_background.jpg")`
+    // image.classList.add("active");
 
     userResult.src = cpuResult.src = "images/rock.png";
     result.textContent = "Wait...";
